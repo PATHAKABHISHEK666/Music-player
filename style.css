@@ -1,0 +1,117 @@
+/* Customize the scrollbar track color */
+
+::-webkit-scrollbar {
+  width: 10px;
+  /* Add transition for smooth visibility change */
+}
+
+/* Show scrollbar when hovered over */
+::-webkit-scrollbar:hover {
+  display: block; /* Make scrollbar visible when hovered over */
+}
+/* Customize the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+#music-player {
+  text-align: center;
+}
+
+#progress-bar-container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #ccc;
+}
+
+#progress-bar {
+  height: 10px;
+  background-color: #4caf50;
+}
+
+/* Add more CSS styles as needed */
+.bottom-gredient {
+  background: rgb(0, 255, 147);
+  background: linear-gradient(
+    238deg,
+    rgb(0, 81, 255) 0%,
+    rgba(58, 173, 182, 1) 26%,
+    rgba(91, 125, 202, 1) 45%,
+    rgba(115, 90, 217, 1) 57%,
+    rgba(145, 48, 235, 1) 78%,
+    rgba(179, 0, 255, 1) 96%
+  );
+}
+
+.library-svg {
+  fill: #b2b2b2;
+  transition-duration: 300ms;
+}
+.lib:hover .library-svg {
+  fill: white;
+}
+.plus-btn {
+  padding: 2px;
+  transition-duration: 300ms;
+  display: flex;
+  cursor: pointer;
+  position: relative;
+  cursor: pointer;
+}
+.plus-btn:hover {
+  background: rgba(95, 95, 95, 0.217);
+
+  border-radius: 50%;
+
+  /* justify-content: center;
+  align-items: center; */
+  z-index: 1;
+}
+
+.notification {
+  opacity: 0;
+  width: 180px;
+  font-size: 13px;
+  text-align: center;
+  position: absolute;
+  top: -45px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-weight: 600;
+  transition-duration: 500ms;
+}
+
+.plus-btn:hover + .notification {
+  display: block;
+  opacity: 1;
+}
+.main-div {
+  background: rgba(255, 255, 255, 0.273);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.153) 0%,
+    rgba(249, 249, 249, 0.066) 26%,
+    rgba(219, 219, 219, 0) 45%,
+    rgba(220, 220, 220, 0) 57%,
+    rgba(62, 62, 62, 0) 78%,
+    rgba(26, 26, 26, 0) 100%
+  );
+  height: 100vh;
+}
+.play-btn {
+  transition: 300ms;
+  opacity: 0;
+  top: 168px;
+  right: 25px;
+}
+.card:hover .play-btn {
+  top: 155px;
+  opacity: 1;
+  right: 25px;
+}
+
+
